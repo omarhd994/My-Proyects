@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.layout {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 132px;
+  border-bottom: 3px solid black; 
+  margin-bottom: 35px;
+}
+
+.header .logo {
+  flex-grow: 2;
+  display: flex;
+}
+
+.header .logo span {
+  display: block;
+  font-size: 58px;
+  font-weight: bolder;
+}
+
+.header .logo h3 {
+  display: block;
+  flex-basis: 40px;
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+.header nav {
+  flex-grow: 1;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  list-style: none;
+}
+
+.header nav li {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: all 300ms;
+}
+
+.header .active,
+.header a:hover{
+  color:brown;
+}
+
+.content {
+  min-height: 580px;
+}
+
+.footer {
+  min-height: 50px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 35px;
+  padding-top: 45px;
+  border-top: 3px solid black;
+  background: #f5f5f5;
+  color: #444;
+}
+
+
+.Servicios h1 {
+  text-align: center;
+}
+
+.home h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+.home h1 strong {
+  color: #B8041A;
+}
+
+.home h2 {
+  color: rgb(57, 57, 57);
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.home a{
+  padding: 0.01%;
+  border-radius: 5px;
+  color: whitesmoke;
+  background-color: #B8041A;
+  text-decoration: none;
+  transition: all 400ms;
+}
+
+.page .heading,
+.Servicios .heading,
+.home .heading,
+.CV .heading,
+.contact .heading{
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+home p{
+  color: rgb(57, 57, 57);
+}
+
+input[type="text"],
+textarea{
+  display: block;
+  padding: 15px;
+  margin-top: 25px;
+  width: 250px;
+}
+
+input[type="submit"],
+button{
+  font-size: 15px;
+  padding: 12px;
+  margin-top: 5px;
+  border: 0px;
+  border-radius: 5px;
+  color: whitesmoke;
+  background-color: #B8041A;
+  text-decoration: none;
+  transition: all 400ms;
+  cursor: pointer;
+}
+
+.home a:hover,
+input[type="submit"]:hover,
+button :hover{
+  background-color: black;}
