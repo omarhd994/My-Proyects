@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { ListadoTrabajos } from './layout/ListadoTrabajos';
 
 
 export const Inicio = () => {
@@ -11,7 +12,7 @@ export const Inicio = () => {
         of project or mission.
       </h1>
 
-      <h2>I am able to create projects from scratch, participate in the entire proces, 
+      <h2 className="title">I am able to create projects from scratch, participate in the entire proces, 
         I identify and fix bugs, ensure testing prosesses. I am a good team-worker and have 
         good communications skills. I am polyglot as well and I am fluent in French, Spanish, English and Dutch.
         If you are interested in my profile <Link to='/Contacto'className={({isActive}) => isActive ? "active" : ""}>contact me.</Link>
@@ -19,6 +20,7 @@ export const Inicio = () => {
       <section className='last projects:'>
         <h2 className='heading'>Here are some of my projects</h2>
         <p>These are some projects that I created as FullStack Developer</p>
+            <ListadoTrabajos limite="2"/>
 
     </section>
     </div>
